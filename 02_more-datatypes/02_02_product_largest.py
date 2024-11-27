@@ -5,6 +5,20 @@
 # Find the largest number in the list and print the result.
 # Calculate the product of all of the numbers in the list.
 
-from resources import randlist
+#from resources import randlist
 
-print(randlist)
+list = []
+
+while len(list) < 3:
+    try:
+        number = int(input("Please enter a number. "))
+        list.append(number)
+    except ValueError: 
+        print("Fix yo entry. ")
+#print(list)
+
+largest_number = max(list)
+print(f"largest number = {largest_number}")
+
+total_sum = sum(list)
+print(f"total sum = {total_sum}")
