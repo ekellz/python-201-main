@@ -5,3 +5,6 @@
 # - Convert the list back into a tuple.
 
 string = "codingnomads"
+to_tuple = tuple(string)
+print(type(to_tuple))
+to_list = to_tuple
