@@ -7,4 +7,13 @@
 string = "codingnomads"
 to_tuple = tuple(string)
 print(type(to_tuple))
-to_list = to_tuple
+to_list = list(to_tuple)
+print(type(to_list))
+for char in to_list:
+    if char == "c":
+        change_letter = list(to_list)
+        change_letter[to_list.index(char)] = "k"
+        break
+print(change_letter)
+change_back = tuple(change_letter)
+print(type(change_back))

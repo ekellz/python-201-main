@@ -22,3 +22,7 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for key in office:
+    name = key["full_name"].split()
+    print(f'{name[1].upper()}, {name[0]}'.ljust(25), key["item"])

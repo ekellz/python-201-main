@@ -16,3 +16,7 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+for key in famous_quotes:
+    name = key["full_name"].split()
+    print(f'"{key["quote"]}" - {name[1]}, {name[0]}')

@@ -17,3 +17,19 @@ from resources import randlist
 print(randlist)
 
 # Write your code below here
+sorted_list = sorted(randlist)
+print(sorted_list)
+
+tuples = []
+
+for i in range(0, len(sorted_list), 2):
+    if i + 1 < len(sorted_list):
+        tuples.append((sorted_list[i], sorted_list[i + 1]))
+        pair = (sorted_list[i], sorted_list[i + 1]) # creates the pair
+    else:
+         # if the list has an odd number of items
+        pair = (sorted_list[i], 0)
+        tuples.append(pair)
+
+for pair in tuples:
+    print(pair)
