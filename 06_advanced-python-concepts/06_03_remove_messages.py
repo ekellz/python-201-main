@@ -7,3 +7,5 @@
 from codingnomads.cook import soup
 
 print(f"I like {soup}.")
+
+# it worked! I only see the message I wanted to see.
